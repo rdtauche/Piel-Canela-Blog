@@ -1,40 +1,147 @@
-.container{
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      /* grid-template-columns: repeat(2,1fr); */
-      /* grid-template-rows: 45vh 45vh; */
-      grid-template-columns: 30px repeat(7,1fr);
-      grid-template-rows: 100px 350px 600px 100px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main sd sd"
-      "ft ft ft ft ft ft ft ft";
-      grid-gap: 15px;
-      border: 2px solid black;
-      padding: 15px;
+h2 {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    text-decoration: underline;
+    /* width: 85%; Set the width of the positioned div */
+    /* keeps text in center for responsive css */
+    max-width: 100vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font: 400 6vw/1.4em 'Pacifico', Helvetica, sans-serif;
+    color: rgb(140, 219, 255);
+    margin: 10px;
+    text-shadow: 1px 1px 0px black, 1px 1px 0px black;
+    padding-top: 60px;
   }
 
-.box{
-    display: flex;
-    border: 1px solid black;
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    }
-
-.header{
-    grid-area: hd;
-    }
 .footer{
     grid-area: ft;
-    }
-.sidebar{
-    grid-area: sd;
-    }
-.content{
-    grid-area: main;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(230, 225, 226);
+    border: 1px solid rgb(230, 225, 226);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
     }
 
-    /* test test */
+
+/* YOUTUBE VIDEOS */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+     
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+ .navbar {
+    list-style-type: none;
+    /* z-index makes sticky navbar stay on top as u scroll  */
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-image: url('rooftop.jpg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid rgb(230, 225, 226);
+    /* this fixes the nav bar to top when scrolling */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font: 400 2vw/1.5 'Pacifico', Helvetica, sans-serif;
+    color: white;
+    }
+
+.navlinks {
+    display: inline;
+    text-decoration:  none;
+    color: black;
+    }
+
+.navlinks2 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font: 400 3vw/1.4em 'Pacifico', Helvetica, sans-serif;
+    color: rgb(140, 219, 255);
+    text-shadow: 1px 1px 0px black, 1px 1px 0px black;
+    }
+    
+a:hover {
+/* changes background color when mouse hovers over the link */
+    background-color:rgb(247, 199, 229);
+    }
+
+a  {
+/* applies padding between the navigation horizontal links */
+    padding: 20px;
+    }
+
+/* SOCIAL MEDIA Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+/* SOCIAL MEDIA Style the icon bar links */
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+    }
+
+/* SOCIAL MEDIA Style the social media icons with color, if you want */
+.icon-bar a:hover {
+    background-color: white;
+    }
+
+.facebook {
+    background: rgb(140, 219, 255);
+    color: white;
+    }
+
+.instagram {
+    background: rgb(140, 219, 255);
+    color: white;
+    }
+
+.google {
+    background: rgb(140, 219, 255);
+    color: white;
+    }
+
+.linkedin {
+    background: rgb(140, 219, 255);
+    color: white;
+    }
+
+.youtube {
+    background: rgb(140, 219, 255);
+    color: white;
+    }

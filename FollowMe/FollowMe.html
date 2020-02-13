@@ -7,26 +7,69 @@
         content="width=device-width, initial-scale=1, maximum-scale=1"
         name="viewport"/>
         <link rel="stylesheet" href="FollowMe.css">
-        <h1>Piel Canela</h1>
-        <nav>
-            <a href="../HomePage.html">Home</a> |
-            <a href="../MyVlog/MyVlog.html">My Vlog</a> |
-            <a href="../MyStory/MyStory.html">My Story</a> |
-            <a href="../MyLifeStyle/MyLifeStyle.html">My LifeStyle</a> |
-            <a href="FollowMe.html">Follow Me</a>
-        </nav>
+
+        <!-- This is the cool style of text i found on internet -->
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- Load font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="navbar">
+            <a class="navlinks" href="../HomePage.html">Home</a>
+            <a class="navlinks" href="../MyVlog/MyVlog.html">My Vlog</a>
+            <a class="navlinks" href="../MyStory/MyStory.html">My Story</a>
+            <a class="navlinks" href="../FollowMe/FollowMe.html">Follow Me</a>
+        </div>
+
     </head>
     <body>
-    <div class = "container">
-        <div class="header box"></div>  
-        <div class="sidebar box">
-            <h1>My Most Recent Blog</h1>
-            <a href="../HomePage.html">Go Back to HomePage</a>
-        </div>
-        <div class="content box">Content</div>
-        <div class="footer box">Footer</div>
+
+        <div class="container">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="../datenight.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <form method="post" action="mailto:ross.tauchert@gmail.com" >
+                    <input type="submit" value="Send Email" /> 
+                    </form>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/ross.tauchert" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/rosstauchert/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.linkedin.com/in/ross-tauchert-9489079/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCpDG5yl1yYffS6nnPVOS1rA?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
 </body>
+<footer>
+    <div class="footer">
+        <p>Posted by: Ross Tauchert</p>
+        <p>Contact information: <a href="mailto:ross.tauchert@gmail.com">
+        ross.tauchert@gmail.com</a>.</p>
+    </div>
+</footer>
 
-<!-- test test -->
 </html>
