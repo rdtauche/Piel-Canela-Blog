@@ -3,8 +3,10 @@
       display:grid;
    /* Step 2: setup rows amd columns */
       /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: 45vh 45vh;
+      /* grid-template-columns: repeat(2,1fr); */
+      /* grid-template-rows: 45vh 45vh; */
+      grid-template-columns: 30px repeat(7,1fr);
+      grid-template-rows: 100px 350px 600px 100px;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "main main main main main main sd sd"
@@ -34,3 +36,5 @@
 .content{
     grid-area: main;
     }
+
+    /* test test */
