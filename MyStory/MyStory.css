@@ -31,6 +31,13 @@ h2 {
     color: black;
     }
 
+li {
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+    font: 400 2vw/1.4em 'Pacifico', Helvetica, sans-serif;
+
+}
 
 /* PHOTO GALLERY configuration on homepage */
 .row {
